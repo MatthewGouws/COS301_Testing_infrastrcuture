@@ -5,12 +5,13 @@
 \contentsline {section}{\numberline {5}Functional}{3}{section.5}
 \contentsline {subsection}{\numberline {5.1}use cases and results}{3}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}authorization}{3}{subsubsection.5.1.1}
-\contentsline {section}{\numberline {6}Non-functional}{3}{section.6}
-\contentsline {subsection}{\numberline {6.1}Performance}{3}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Scalability}{3}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {5.1.2}Notification}{4}{subsubsection.5.1.2}
+\contentsline {section}{\numberline {6}Non-functional}{4}{section.6}
+\contentsline {subsection}{\numberline {6.1}Performance}{4}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Scalability}{4}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Maintainability}{4}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Reliability}{4}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Usability}{4}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}availability}{4}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}manageability}{4}{subsection.6.7}
-\contentsline {section}{\numberline {7}References}{4}{section.7}
+\contentsline {subsection}{\numberline {6.4}Reliability}{5}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Usability}{5}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}availability}{5}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}manageability}{5}{subsection.6.7}
+\contentsline {section}{\numberline {7}References}{5}{section.7}
