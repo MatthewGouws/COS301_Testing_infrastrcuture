@@ -31,7 +31,8 @@ Date & Version & Description\\ %NOTE: Necessary for [updated by] ?
 \hline
 23-04-2015 & Version 0.1.8 & Added Space use cases\\ %April 23- Matthew(The original one) (Took the date that the document was on github)
 \hline
-
+23-04-2015 & Version 0.1.9 & Added CSDS use cases\\ %April 23- Ephiphania (Took the date that the document was on github)
+\hline
 \end{tabular}
 
 \newpage
@@ -118,6 +119,22 @@ Is Administrator - Receives the user to be checked then searches the admin list 
 Get User Profile -  Searchs for the user that is queried and returns the user searched for. & Could not npm install, Missing dependencies, thus would not run &  \\ %
 \hline
 Register On Buzz Space - Registers the user on buzz spaces and stores the user in the database. & Could not npm install, Missing dependencies, thus would not run &  \\ %
+\hline
+
+
+\end{tabular}
+
+\subsubsection{The Buzz-Data-Sources Module}%NOTE: This table consists of all the use-cases under CSDS
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|}
+
+\hline
+Use Case(s) & Buzz A & Buzz B \\ 
+\hline
+Login and administrative user - The system should authenticate against the CS DataSources within which authentication credentials are currently stored. & Gets connection to DataSource, Authenticate user against the DataSource and userID is returned. & Gets connection to DataSource, Authenticate user against the DataSource and userID is returned.\\ %
+\hline
+getUsersRolesForModule - This function is to query the user roles for a particular user. & Has local copy to the userID, ModuleID and roles array. It returns user roles for module request. & Has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request.\\ %
+\hline
+getUsersWithRole - It retrieves all the users that have a particular role like a teachingAssistant role for a particular module. & Has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request. & Has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request\\ %
 \hline
 
 \end{tabular}
