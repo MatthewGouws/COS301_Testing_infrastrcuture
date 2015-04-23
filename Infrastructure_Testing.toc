@@ -18,5 +18,5 @@
 \contentsline {subsection}{\numberline {6.7}Manageability}{8}{subsection.6.7}
 \contentsline {subsection}{\numberline {6.8}Security}{8}{subsection.6.8}
 \contentsline {subsection}{\numberline {6.9}Monitorability and Auditability}{8}{subsection.6.9}
-\contentsline {subsection}{\numberline {6.10}Integrability}{8}{subsection.6.10}
+\contentsline {subsection}{\numberline {6.10}Integrability}{9}{subsection.6.10}
 \contentsline {section}{\numberline {7}References}{9}{section.7}

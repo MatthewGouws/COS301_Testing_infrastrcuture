@@ -33,6 +33,9 @@ Date & Version & Description\\ %NOTE: Necessary for [updated by] ?
 \hline
 23-04-2015 & Version 0.1.9 & Added CSDS use cases\\ %April 23- Ephiphania (Took the date that the document was on github)
 \hline
+\hline
+24-04-2015 & Version 0.2.0 & Added availability and security non-functional requirements\\ %April 24- Shaun (Took the date that the document was on github)
+\hline
 \end{tabular}
 
 \newpage
@@ -66,15 +69,15 @@ The scope of the integration for infrastructure was to combine all functional te
 \hline
 Use Case(s) & Buzz A & Buzz B \\ 
 \hline
-addAuthorizationRest - Adds an authorization restriction for a user role in a particular buzz space. & Could not NPM install due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
+addAuthorizationRest - Adds an authorization restriction for a user role in a particular buzz space. & Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
 \hline
-updateAuthorizationRest - Facilitates editing of authorization restrictions. &  Could not NPM install due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
+updateAuthorizationRest - Facilitates editing of authorization restrictions. &  Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
 \hline
-removeAuthorizationRest - Removes an authorization restriction for a user role from a buzz space. &  Could not NPM install due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
+removeAuthorizationRest - Removes an authorization restriction for a user role from a buzz space. &  Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
 \hline
-getAuthorizationRest - Retrieves the authorization restriction to enable users to select a restriction to update. &  Could not NPM install due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
+getAuthorizationRest - Retrieves the authorization restriction to enable users to select a restriction to update. &  Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
 \hline
-isAuthorized - Queries the services a user may access in order to customize the UI for the user. & Could not NPM install due to missing dependencies, as a result could not run& Only Mock functionality, does not run\\ %
+isAuthorized - Queries the services a user may access in order to customize the UI for the user. & Could not NPM start as stated in README due to missing dependencies, as a result could not run& Only Mock functionality, does not run\\ %
 \hline
 
 \end{tabular}
@@ -116,7 +119,7 @@ Remove Administrator - Receives the user to be removed then removes the user fro
 \hline
 Is Administrator - Receives the user to be checked then searches the admin list for the user.  & Could not npm install, Missing dependencies, thus would not run &  \\ %
 \hline
-Get User Profile -  Searchs for the user that is queried and returns the user searched for. & Could not npm install, Missing dependencies, thus would not run &  \\ %
+Get User Profile -  Searches for the user that is queried and returns the user searched for. & Could not npm install, Missing dependencies, thus would not run &  \\ %Shaun edited spelling errors
 \hline
 Register On Buzz Space - Registers the user on buzz spaces and stores the user in the database. & Could not npm install, Missing dependencies, thus would not run &  \\ %
 \hline
@@ -156,12 +159,14 @@ Stub - This will be added in the future
 %Axel please add here
 Due to the fact that the code is barely traceable to where it is located, it is very difficult to use this package. Insight into the development would be required to allow a user to be able to use the code correctly and how to use the code before production could begin.
 \subsection{Availability}
-Stub - This will be added in the future
+%Shaun initially added this
+Considering the fact that the system was going to be hosted online on successful completion, its availability would've been archived since it would be in an operable and committable state at any random time. However this is not the case with the current state of the system.
 
 \subsection{Manageability}
 Stub - This will be added in the future
 \subsection{Security}
-Stub - This will be added in the future
+%Shaun initially added this
+Authorization is the module that was supposed to provide the degree of security in this system. Both authorization A and B  failed to run due to missing dependencies and only mock functionality provided for the other. Considering this, resistance to, or protection from, harm failed.
 \subsection{Monitorability and Auditability}
 Stub - This will be added in the future
 \subsection{Integrability}
