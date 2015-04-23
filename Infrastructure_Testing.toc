@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {6.5}Usability}{7}{subsection.6.5}
 \contentsline {subsection}{\numberline {6.6}Availability}{7}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Manageability}{7}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Security}{7}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Monitorability and Auditability}{7}{subsection.6.9}
+\contentsline {subsection}{\numberline {6.8}Security}{8}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Monitorability and Auditability}{8}{subsection.6.9}
 \contentsline {subsection}{\numberline {6.10}Integrability}{8}{subsection.6.10}
 \contentsline {section}{\numberline {7}References}{8}{section.7}
