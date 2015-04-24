@@ -150,23 +150,51 @@ getUsersWithRole - It retrieves all the users that have a particular role like a
 \section{Non-functional} %Please correct me if I am wrong on these headings % seems all in order
 \subsection{Performance}
 %Axel please add here
+The use of Nodejs allows the B Infrastructure system to run in a multithreaded manner with very high performance. Furthermore, if the final system were to make use of MongoDB (as specified), an appropriate performance increase would be achieved, indicating minimal-bottlenecking in the system overall.
+
+The Integration Team also provided code which was highly streamlined, with no recursive methods or unnecessary process iterations. Suitable response times can be expected from the system for any reasonable number of concurrent users.
+
+
 As stated for the B system, A would run similarly in performance due to the use of NodeJS and MongoDB, With the code very difficult to track down and run, the true performance could not be tested for the system, but given a decent entry level server would be expected to handle multiple client connections at once.
 \subsection{Scalability}
-%Axel please add here (Your work seems to cover A and B)
-Stub - This will be added in the future
+By its nature, Nodejs and its subcomponents provides a high level of intrinsic scalability, due in no small part, to the streamlined use of client-server architecture. 
+
+The work of the mid-level integration teams for both A and B included the appropriate use of core Nodejs functionality to create Service Objects, facilitating easy implementation of a single or several thousand Spaces. Multithreading is implemented and no limitting bounds are set on the potential permissible Space IDs.
+
+At present every function at the midlevel operates with O(logn) complexity (as the number of tasks increase, the odds of a given task already having been performed and, thus needed no additional complex work, increases significantly) 
+
 \subsection{Maintainability}
-%Axel please add here
+Although the code appears simplistic and highly maintainable, minimal commenting was provided by the Integration Team. The current code is human-readable, but in the pursuit of long-term maintainability by multiple parties, the lack of authors’ notes could be seen as a potential stumbling block to future programmers.
+
+That notwithstanding, the code provided by the Integration Team clearly makes strong distinctions between individual components and would, for example, allow modifications to the registerOnBuzzSpace and closeBuzzSpace processes independently and with suitable modularisation for easy further modification by a third party.
+
 Due to the fact that the code is very difficult to access in the repository for A it is highly unlikely it can be called maintainable. However unit tests seem to have been completed and thus would be easy to add specific extra cases to the code while ensuring it does not break the known working code.
 \subsection{Reliability}
-Due to the lack in all aspects of Buzz parts A and B the reliability is non-existent due to missing code, mock functions and not being able to run the packages.
+Due to the lack in all aspects of Buzz B the reliability is non-existent due to missing code, mock functions and not being able to run the packages.
+
+The Integration Team of Buzz B have implemented a highly reliable way to integrate Spaces. An appropriate message is logged when an access attempt is made and several comprehensive exceptions are thrown by the system when registerOnBuzzSpace, closeBuzzSpace and other processes fail.
+
+It may be advisable, however, to increase the number of exceptions that may be thrown to better inform the system as to the problem that has occurred. For example: rather than stating: "BuzzSpace 7A is closed or does not exist." It may be prudent to have 2 errors: “BuzzSpace 7A is closed” and “BuzzSpace 7A does not exist”.
+
 \subsection{Usability}
-%Axel please add here
+Given, the admittedly sparse, template provided by the Integration B Team, it is clear that Buzz B’s modularised functionality would be highly useable at mid-level. All modules are given descriptive names, all variable names are human-readable and meaningful, and programming logic is clear throughout. 
+
+The only remark on improvement has already been mentioned in Maintainability and would involve the addition of more comments to better guide a first-time user.
+
+
 Due to the fact that the code is barely traceable to where it is located, it is very difficult to use this package. Insight into the development would be required to allow a user to be able to use the code correctly and how to use the code before production could begin.
 \subsection{Availability}
-%Shaun initially added this
+One would expect the availability of the Buzz B System to be almost 100 percent. The code itself is minimal and, given appropriate decoupling from the implementation of Modules at a lower level, one could expect and changes that need to be made at the mid-level to be performed very quickly, while low-level changes to implementation could be accounted for suitably quickly.
+
+Because Services are implemented as discrete objects, it would also significantly reduce downtime that may be caused by the failure of a single space, if that space could be recreated or reconnected to in a suitably dynamic and time-sensitive way.
+
 Considering the fact that the system was going to be hosted online on successful completion, its availability would've been archived since it would be in an operable and committable state at any random time. However this is not the case with the current state of the system.
 
 \subsection{Manageability}
+Given the fairly abstract and well-decoupled nature of Buzz B Infrastructure, the Manageability of the component is fairly high and would facilitate easy management of (unlikely) logical errors in the Buzz B system. 
+
+Again, the one negative aspect of the emergent manageability of the system is the lack of commenting which makes the code unnecessarily hard to read and would limit the ability of the a programmer, either inspecting code manually or through a comment documentation system (e.g. Doxygen), to quickly grasp nuances in logic that may be affected by minor changes.
+
 The manageability of part A is by no means possible. Without being able to get Buzz to run it is impossible to have any manageability in the system. For Buzz B it is highly manageable in its current state due to all the mock functions but since the code does not produce any significant functionality it is thus overlooked.
 \subsection{Security}
 %Shaun initially added this
