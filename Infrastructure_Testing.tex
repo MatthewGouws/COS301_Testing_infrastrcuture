@@ -141,9 +141,9 @@ Use Case(s) & Buzz A & Buzz B \\
 \hline
 Login and administrative user - The system should authenticate against the CS DataSources within which authentication credentials are currently stored. & Gets connection to DataSource, Authenticate user against the DataSource and userID is returned. & Gets connection to DataSource, Authenticate user against the DataSource and userID is returned.\\ %
 \hline
-getUsersRolesForModule - This function is to query the user roles for a particular user. & Has local copy to the userID, ModuleID and roles array. It returns user roles for module request. & Has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request.\\ %
+getUsersRolesForModule - This function is to query the user roles for a particular user. & The function successfully meets the requirements it has local copy to the userID, ModuleID and roles array. It returns user roles for module request. &  The function fails to meets the requirements it has local copy to the userID, ModuleID and roles array but it \emph{does not} return user roles for module request.\\ %
 \hline
-getUsersWithRole - It retrieves all the users that have a particular role like a teachingAssistant role for a particular module. & Has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request. & Has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request\\ %
+getUsersWithRole - It retrieves all the users that have a particular role like a teachingAssistant role for a particular module. & The function fails to meets the requirements has local copy to the userID, ModuleID and roles array but it \emph{does not} return user roles for module request. & The function fails to meets the requirements has local copy to the userID, ModuleID and roles array. It \emph{does not} returns user roles for module request\\ %
 \hline
 
 \end{tabular}
