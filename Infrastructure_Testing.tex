@@ -95,7 +95,7 @@ Standard Notification - When a user adds a new thread it sends notifications to 
 
 
 \end{tabular}
-\section{Non-functional} %Please correct me if I am wrong on these headings % seems all in order
+\section{Non-functional A} %Please correct me if I am wrong on these headings % seems all in order
 \subsection{Performance}
 Stub - This will be added in the future
 \subsection{Scalability}
@@ -116,6 +116,53 @@ Stub - This will be added in the future
 Stub - This will be added in the future
 \subsection{Integrability}
 Stub - This will be added in the future
+
+\section{Non-functional B} %Please correct me if I am wrong on these headings % seems all in order
+\subsection{Performance}
+The use of Nodejs allows the B Infrastructure system to run in a multithreaded manner with very high performance. Furthermore, if the final system were to make use of MongoDB (as specified), an appropriate performance increase would be achieved, indicating minimal-bottlenecking in the system overall.
+
+The Integration Team also provided code which was highly streamlined, with no recursive methods or unnecessary process iterations. Suitable response times can be expected from the system for any reasonable number of concurrent users.
+
+\subsection{Scalability}
+By its nature, Nodejs and its subcomponents provides a high level of intrinsic scalability, due in no small part, to the streamlined use of client-server architecture. 
+
+The work of the mid-level integration team included the appropriate use of core Nodejs functionality to create Service Objects, facilitating easy implementation of a single or several thousand Spaces. Multithreading is implemented and no limitting bounds are set on the potential permissible Space IDs.
+
+At present every function at the midlevel operates with O(logn) complexity (as the number of tasks increase, the odds of a given task already having been performed and, thus needed no additional complex work, increases significantly) 
+
+\subsection{Maintainability}
+Although the code appears simplistic and highly maintainable, minimal commenting was provided by the Integration Team. The current code is human-readable, but in the pursuit of long-term maintainability by multiple parties, the lack of authors’ notes could be seen as a potential stumbling block to future programmers.
+
+That notwithstanding, the code provided by the Integration Team clearly makes strong distinctions between individual components and would, for example, allow modifications to the registerOnBuzzSpace and closeBuzzSpace processes independently and with suitable modularisation for easy further modification by a third party.
+
+\subsection{Reliability}
+The Integration Team of Buzz B have implemented a highly reliable way to integrate Spaces. An appropriate message is logged when an access attempt is made and several comprehensive exceptions are thrown by the system when registerOnBuzzSpace, closeBuzzSpace and other processes fail.
+
+It may be advisable, however, to increase the number of exceptions that may be thrown to better inform the system as to the problem that has occurred. For example: rather than stating: "BuzzSpace 7A is closed or does not exist." It may be prudent to have 2 errors: “BuzzSpace 7A is closed” and “BuzzSpace 7A does not exist”.
+
+
+\subsection{Usability}
+Given, the admittedly sparse, template provided by the Integration B Team, it is clear that Buzz B’s modularised functionality would be highly useable at mid-level. All modules are given descriptive names, all variable names are human-readable and meaningful, and programming logic is clear throughout. 
+
+The only remark on improvement has already been mentioned in Maintainability and would involve the addition of more comments to better guide a first-time user.
+
+\subsection{Availability}
+One would expect the availability of the Buzz B System to be almost 100%. The code itself is minimal and, given appropriate decoupling from the implementation of Modules at a lower level, one could expect and changes that need to be made at the mid-level to be performed very quickly, while low-level changes to implementation could be accounted for suitably quickly.
+
+Because Services are implemented as discrete objects, it would also significantly reduce downtime that may be caused by the failure of a single space, if that space could be recreated or reconnected to in a suitably dynamic and time-sensitive way.
+
+\subsection{Manageability}
+Given the fairly abstract and well-decoupled nature of Buzz B Infrastructure, the Manageability of the component is fairly high and would facilitate easy management of (unlikely) logical errors in the Buzz B system. 
+
+Again, the one negative aspect of the emergent manageability of the system is the lack of commenting which makes the code unnecessarily hard to read and would limit the ability of the a programmer, either inspecting code manually or through a comment documentation system (e.g. Doxygen), to quickly grasp nuances in logic that may be affected by minor changes.
+
+\subsection{Security}
+Given that the log in functionality has not been properly implemented for Buzz be there is little-to-no security in place to protect the system.
+\subsection{Monitorability and Auditability}
+The use of console logging ensures and action-listeners mean that all activities can be monitored as and when they occur.
+\subsection{Integrability}
+The high modularisation implemented by Buzz B means that future integrability can be easily achieved.
+
 
 \section{References}
 Stub - This will be added in the future
