@@ -35,6 +35,10 @@ Date & Version & Description\\ %NOTE: Necessary for [updated by] ?
 \hline
 24-04-2015 & Version 0.2.0 & Added availability and security non-functional requirements\\ %April 24- Shaun (Took the date that the document was on github)
 \hline
+24-04-2015 & Version 0.2.1 & Added Manageability and Reliability\\ %April 24- Andrew (Took the date that the document was on github)
+\hline
+24-04-2015 & Version 0.2.2 & Added Monitor ability and Auditability and integrability\\ %April 24- Andrew (Took the date that the document was on github)
+\hline
 \end{tabular}
 
 \newpage
@@ -43,8 +47,9 @@ Date & Version & Description\\ %NOTE: Necessary for [updated by] ?
 
 \section{Introduction} % added by Andrew but please read over it and make corrections
 					   % This section read over by Matthew(The original one)
+					   %fixed mid-level
 This document contains:
-Part 1 the functional testing phase for each mid level parts Buzz A and Buzz B.
+Part 1 the functional testing phase for each mid-level parts Buzz A and Buzz B.
 Each section will show the success or the failure of each part. This contains all violations of the contract requirements.
 Pre- and post- conditions should be tested for all the violations and the data structure requirements.
 For all the testing, an analysis report of the percentage cases will be given that will depict the amount of work done and the successfulness of the sections in the implementation.
@@ -57,7 +62,7 @@ The purpose of this task was to test functionality provided by mid-level integra
 
 
 \section{Project Scope} % To be filled in at a later stage
-The scope of the integration for infrastructure was to combine all functional teams code in a manner which could be used by top level integration. From what has been discovered and explained further in this document it shows that both teams A and B have failed to do so. Team A was very difficult to try and decipher. With missing dependencies, while Team B only had mock functionality.
+The scope of the integration for infrastructure was to combine all functional teams' code in a manner which could be used by top level integration. From what has been discovered and explained further in this document it shows that both teams A and B have failed to do so. Team A was very difficult to try and decipher. With missing dependencies, while Team B only had mock functionality.
 
 \section{Functional} %specify the use cases as in the MasterSpecifications - Table format, Compare A vs B
 \subsection{use cases and results}
@@ -74,7 +79,7 @@ updateAuthorizationRest - Facilitates editing of authorization restrictions. &  
 \hline
 removeAuthorizationRest - Removes an authorization restriction for a user role from a buzz space. &  Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
 \hline
-getAuthorizationRest - Retrieves the authorization restriction to enable users to select a restriction to update. &  Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
+getAuthorizationRest - Retrieves the authorization restriction to enable users to select a restriction to update. & Could not NPM start as stated in README due to missing dependencies, as a result could not run & Only Mock functionality, does not run\\ %
 \hline
 isAuthorized - Queries the services a user may access in order to customize the UI for the user. & Could not NPM start as stated in README due to missing dependencies, as a result could not run& Only Mock functionality, does not run\\ %
 \hline
@@ -96,7 +101,7 @@ Web Notification - returns a list of notifications for the specified user & Coul
 \hline
 Register For Notification - Allows a user to register for notifications on a thread, to specified users  & Could not npm install, Missing dependencies, thus would not run & Only Mock functionality, does not run \\ %
 \hline
-Standard Notification - When a user adds a new thread it sends notifications to a list of registered users & Could not npm install, Missing dependencies, thus would not run &  Only Mock functionality, does not run\\ %
+Standard Notification - When a user adds a new thread it sends notifications to a list of registered users & Could not npm install, Missing dependencies, thus would not run & Only Mock functionality, does not run\\ %
 \hline
 
 
@@ -118,7 +123,7 @@ Remove Administrator - Receives the user to be removed then removes the user fro
 \hline
 Is Administrator - Receives the user to be checked then searches the admin list for the user.  & Could not npm install, Missing dependencies, thus would not run &  \\ %
 \hline
-Get User Profile -  Searches for the user that is queried and returns the user searched for. & Could not npm install, Missing dependencies, thus would not run &  \\ %Shaun edited spelling errors
+Get User Profile - Searches for the user that is queried and returns the user searched for. & Could not npm install, Missing dependencies, thus would not run &  \\ %Shaun edited spelling errors
 \hline
 Register On Buzz Space - Registers the user on buzz spaces and stores the user in the database. & Could not npm install, Missing dependencies, thus would not run &  \\ %
 \hline
@@ -153,7 +158,7 @@ Stub - This will be added in the future
 %Axel please add here
 Due to the fact that the code is very difficult to access in the repository for A it is highly unlikely it can be called maintainable. However unit tests seem to have been completed and thus would be easy to add specific extra cases to the code while ensuring it does not break the known working code.
 \subsection{Reliability}
-Due to the lack in all aspects of Buzz parts A and B the reliability is non-existant due to missing code, mock functions and not being able to run the packages.
+Due to the lack in all aspects of Buzz parts A and B the reliability is non-existent due to missing code, mock functions and not being able to run the packages.
 \subsection{Usability}
 %Axel please add here
 Due to the fact that the code is barely traceable to where it is located, it is very difficult to use this package. Insight into the development would be required to allow a user to be able to use the code correctly and how to use the code before production could begin.
@@ -162,14 +167,14 @@ Due to the fact that the code is barely traceable to where it is located, it is 
 Considering the fact that the system was going to be hosted online on successful completion, its availability would've been archived since it would be in an operable and committable state at any random time. However this is not the case with the current state of the system.
 
 \subsection{Manageability}
-The managability of part A is by no means possible. Without being able to get Buzz to run it is impossible to have any managability in the system. For Buzz B it is highly managable in its current state due to all the mock functions but since the code does not produce any significant functionality it is thus overlooked.
+The manageability of part A is by no means possible. Without being able to get Buzz to run it is impossible to have any manageability in the system. For Buzz B it is highly manageable in its current state due to all the mock functions but since the code does not produce any significant functionality it is thus overlooked.
 \subsection{Security}
 %Shaun initially added this
 Authorization is the module that was supposed to provide the degree of security in this system. Both authorization A and B  failed to run due to missing dependencies and only mock functionality provided for the other. Considering this, resistance to, or protection from, harm failed.
-\subsection{Monitorability and Auditability}
-Stub - This will be added in the future
-\subsection{Integrability}
-Stub - This will be added in the future
+\subsection{Monitor ability and Auditability}
+In both systems Buzz A and B there does not seem to be any logs or error messages to help with monitoring of the system. Since there is not expected outcome for each we are unable to test to see how auditable the systems are and thus both systems are not monitor able nor are they auditable.
+\subsection{integrability}
+Since there is none of any of the above parts the integrability of the system is not possible. With unreliable systems that are not manageable, without it being usable the system in both Buzz spaces A and B they are not integrable
 
 \section{References}
 Stub - This will be added in the future
