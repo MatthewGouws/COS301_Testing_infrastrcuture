@@ -10,13 +10,13 @@
 \contentsline {subsubsection}{\numberline {5.1.4}The Buzz-Data-Sources Module}{7}{subsubsection.5.1.4}
 \contentsline {section}{\numberline {6}Non-functional}{7}{section.6}
 \contentsline {subsection}{\numberline {6.1}Performance}{7}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Scalability}{7}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.2}Scalability}{8}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Maintainability}{8}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Reliability}{8}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Usability}{8}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Availability}{8}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Manageability}{8}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Security}{8}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Monitorability and Auditability}{8}{subsection.6.9}
-\contentsline {subsection}{\numberline {6.10}Integrability}{9}{subsection.6.10}
-\contentsline {section}{\numberline {7}References}{9}{section.7}
+\contentsline {subsection}{\numberline {6.5}Usability}{9}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Availability}{9}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Manageability}{10}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Security}{10}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Monitor ability and Auditability}{10}{subsection.6.9}
+\contentsline {subsection}{\numberline {6.10}Integrability}{10}{subsection.6.10}
+\contentsline {section}{\numberline {7}References}{11}{section.7}
