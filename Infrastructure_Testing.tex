@@ -41,6 +41,8 @@ Date & Version & Description\\ %NOTE: Necessary for [updated by] ?
 \hline
 24-04-2015 & Version 0.3 alpha & Proposed Alpha testing documentation\\ %April 24- Matthew (Took the date that the document was on github)
 \hline
+23-04-2015 & Version 0.3.1 & Added CSDS Scalability, Testability and Maintainability\\ %April 23- Ephiphania (Took the date that the document was on github)
+\hline
 \end{tabular}
 
 \newpage
@@ -165,12 +167,17 @@ The work of the mid-level integration teams for both A and B included the approp
 
 At present every function at the midlevel operates with O(logn) complexity (as the number of tasks increase, the odds of a given task already having been performed and, thus needed no additional complex work, increases significantly) 
 
+The system implemented by CSDS buzz A supports the ability to host buzz spaces for all Computer Science Modules at a University of the size of the University of Pretoria furthermore it is possible to, in the future, scale the architecture. Whereas CSDS B fails to provide scalability.
+
 \subsection{Maintainability}
 Although the code appears simplistic and highly maintainable, minimal commenting was provided by the Integration Team. The current code is human-readable, but in the pursuit of long-term maintainability by multiple parties, the lack of authors’ notes could be seen as a potential stumbling block to future programmers.
 
 That notwithstanding, the code provided by the Integration Team clearly makes strong distinctions between individual components and would, for example, allow modifications to the registerOnBuzzSpace and closeBuzzSpace processes independently and with suitable modularisation for easy further modification by a third party.
 
 Due to the fact that the code is very difficult to access in the repository for A it is highly unlikely it can be called maintainable. However unit tests seem to have been completed and thus would be easy to add specific extra cases to the code while ensuring it does not break the known working code.
+
+When looking at the CSDS implemented by both groups it is clear to see that it is easy to maintain the system in the future, besides the fact that there is insufficient comments, future developers will be able to easily understand the system because it is implemented simply, the technologies chosen for the system are reasonably expected to be available for a long time and developers will be able to easily and relatively quickly change aspect of the systems functionality as well as add new functionality.
+
 \subsection{Reliability}
 Due to the lack in all aspects of Buzz B the reliability is non-existent due to missing code, mock functions and not being able to run the packages.
 
@@ -205,6 +212,8 @@ Authorization is the module that was supposed to provide the degree of security 
 In both systems Buzz A and B there does not seem to be any logs or error messages to help with monitoring of the system. Since there is not expected outcome for each we are unable to test to see how auditable the systems are and thus both systems are not monitor able nor are they auditable.
 \subsection{Integrability}
 Since there is none of any of the above parts the integrability of the system is not possible. With unreliable systems that are not manageable, without it being usable the system in both Buzz spaces A and B they are not integrable
+\subsection{Testability}
+Most of the services offered by CSDS A are testable through unit tests testing components in isolation using mock objects as well as integration tests where components are integrated within the actual environment which tests them. CSDS B implements a few of these but fails to for most of the requirements.
 
 \section{References}
 \begin{itemize}

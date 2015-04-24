@@ -14,9 +14,10 @@
 \contentsline {subsection}{\numberline {6.3}Maintainability}{8}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Reliability}{9}{subsection.6.4}
 \contentsline {subsection}{\numberline {6.5}Usability}{9}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Availability}{9}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.6}Availability}{10}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Manageability}{10}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Security}{10}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Monitor ability and Auditability}{10}{subsection.6.9}
+\contentsline {subsection}{\numberline {6.8}Security}{11}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Monitor ability and Auditability}{11}{subsection.6.9}
 \contentsline {subsection}{\numberline {6.10}Integrability}{11}{subsection.6.10}
+\contentsline {subsection}{\numberline {6.11}Testability}{11}{subsection.6.11}
 \contentsline {section}{\numberline {7}References}{11}{section.7}
